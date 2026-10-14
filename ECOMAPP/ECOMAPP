@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOMAPP & ECOMAPP-FR | Catalink / SPARROW Project</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0052FF',
+            brandDark: '#0A1128',
+            brandGray: '#F4F6F9',
+            brandRed: '#E63946'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-xs font-bold bg-brandBlue text-white px-2 py-1 rounded">SPARROW</span>
+        <span class="text-xl font-extrabold text-slate-900 tracking-tight">ECOMAPP</span>
+        <span class="text-xs text-slate-500 font-medium hidden sm:inline">by Catalink</span>
+      </div>
+      
+      <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-brandBlue transition">About</a>
+        <a href="#citizens" class="hover:text-brandBlue transition">ECOMAPP (Citizens)</a>
+        <a href="#responders" class="hover:text-brandBlue transition">ECOMAPP-FR (First Responders)</a>
+        <a href="#benefits" class="hover:text-brandBlue transition">Benefits</a>
+        <a href="#specs" class="hover:text-brandBlue transition">Specs</a>
+      </div>
+
+      <a href="#citizens" class="bg-brandBlue text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+        Explore Apps
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 bg-gradient-to-b from-slate-900 via-brandDark to-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <div class="inline-flex items-center space-x-2 bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1.5 rounded-full border border-blue-500/30 mb-6">
+          <i data-lucide="shield-alert" class="w-4 h-4"></i>
+          <span>Next-Generation Emergency Response Platform</span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black tracking-tight leading-tight mb-6">
+          Resilient Crisis Support for <span class="text-blue-500">Citizens</span> & <span class="text-blue-400">Responders</span>
+        </h1>
+        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+          Empowering citizens with real-time safety guidance and offline peer-to-peer communication, while providing First Responders with live operational mapping and START protocol triage.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#citizens" class="bg-brandBlue hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg transition flex items-center justify-center space-x-2">
+            <i data-lucide="smartphone"></i>
+            <span>ECOMAPP (Citizens)</span>
+          </a>
+          <a href="#responders" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-3.5 rounded-xl text-center border border-slate-700 transition flex items-center justify-center space-x-2">
+            <i data-lucide="activity"></i>
+            <span>ECOMAPP-FR (Responders)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MOCKUP CONTAINER -->
+      <div class="flex justify-center relative">
+        <div class="w-72 h-[550px] bg-slate-800 rounded-[40px] p-4 border-4 border-slate-700 shadow-2xl relative">
+          <div class="w-32 h-5 bg-slate-900 rounded-full mx-auto mb-4"></div>
+          <!-- App Screen Mockup -->
+          <div class="bg-slate-100 h-[460px] rounded-[28px] p-4 text-slate-800 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="text-center font-bold text-slate-900 text-lg mb-2">Do you need help?</div>
+              <button class="w-full bg-red-600 text-white font-bold py-4 rounded-full shadow-md text-sm mb-4">
+                Call Emergency Services
+              </button>
+              
+              <div class="grid grid-cols-2 gap-2 text-xs text-center font-medium">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200">Self-Assessment</div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200">First Aid</div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-3 rounded-xl text-xs">
+              <div class="font-bold text-blue-400 mb-1">Tip of the Day</div>
+              <p class="text-slate-300">Keep an emergency kit ready with water, food and first aid supplies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT & EU HORIZON ACKNOWLEDGMENT -->
+  <section id="about" class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Developed within the SPARROW Project</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Developed by <strong>Catalink</strong> under the EU <strong>Horizon Europe</strong> research program (Grant Agreement 101168499). SPARROW strengthens societal resilience and crisis management in the face of digital breakdowns.
+        </p>
+      </div>
+      <div class="flex items-center space-x-3 bg-blue-50 border border-blue-200 p-4 rounded-xl">
+        <div class="w-12 h-8 bg-blue-700 text-yellow-300 text-xs font-bold flex items-center justify-center rounded">★ EU ★</div>
+        <div class="text-xs text-slate-700 font-semibold">
+          Funded by the<br>European Union
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP 1: ECOMAPP (CITIZENS) -->
+  <section id="citizens" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brandBlue font-bold text-sm tracking-wider uppercase">For General Public</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-2 mb-4">ECOMAPP (Citizen Application)</h2>
+        <p class="text-slate-600">
+          Designed to enhance citizens' preparedness and response during emergencies through self-assessment, structured incident reporting, and off-grid communication.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-blue-100 text-brandBlue rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="clipboard-check"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Self-Assessment</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Short guided questionnaire evaluating location, health status, and surroundings to provide tailored safety steps.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-red-100 text-brandRed rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="alert-triangle"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">M/ETHANE Reporting</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Send structured incident reports with hazard details, photos, and exact GPS coordinates directly to first responders.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="wifi-off"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Nearby Chat (Mesh)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Peer-to-peer Bluetooth/Wi-Fi mesh networking allowing direct messages even when cellular or internet networks fail.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="heart-pulse"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">First Aid Guides</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Categorized step-by-step guidance (Critical, Urgent, Minor) for CPR, severe bleeding, choking, and burns.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APP 2: ECOMAPP-FR (FIRST RESPONDERS) -->
+  <section id="responders" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brandBlue font-bold text-sm tracking-wider uppercase">Field Operations</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-2 mb-4">ECOMAPP-FR (First Responders)</h2>
+        <p class="text-slate-600">
+          Operational counterpart designed for rescue teams, providing real-time situational picture, on-scene triage, and route navigation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-3">Live Incident Map</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            Real-time display of citizen reports as color-coded pins. Filters by time/status with built-in navigation to the location.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="qr-code"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-3">START Protocol Triage</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            Co-designed with Johanniter Austria (JOAFG). Rapid casualty categorization (Green, Yellow, Red, Black) via QR wristband scanning.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="navigation"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-3">Traffic Re-routing</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            Integrated with RoadTwin systems to display real-time alternative routes and road closures during crisis transport.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM BENEFITS SECTION -->
+  <section id="benefits" class="py-20 bg-brandDark text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-black mb-4">Key System Benefits</h2>
+        <p class="text-slate-400">A resilient and interoperable approach to emergency communication.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+          <i data-lucide="user-check" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+          <span class="text-xs font-semibold block">Personalised Advice</span>
+        </div>
+        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+          <i data-lucide="radio" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+          <span class="text-xs font-semibold block">Constant Communication</span>
+        </div>
+        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+          <i data-lucide="clock" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+          <span class="text-xs font-semibold block">Real-time Support</span>
+        </div>
+        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+          <i data-lucide="shield" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+          <span class="text-xs font-semibold block">Evidence-informed Rescue</span>
+        </div>
+        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+          <i data-lucide="database" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+          <span class="text-xs font-semibold block">Interoperable Data</span>
+        </div>
+        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+          <i data-lucide="smartphone" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+          <span class="text-xs font-semibold block">Android & iOS Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS & REQUIREMENTS -->
+  <section id="specs" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="bg-white p-8 rounded-2xl border border-slate-200">
+        <h3 class="font-bold text-xl text-slate-900 mb-4 flex items-center space-x-2">
+          <i data-lucide="cpu" class="text-brandBlue"></i>
+          <span>ECOMAPP Requirements</span>
+        </h3>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>Cross-platform Stack (React Native / Expo)</span></li>
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>SIM (4G/5G) & Wi-Fi support</span></li>
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>Bluetooth for Nearby Mesh Chat</span></li>
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>GPS Location Permissions</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl border border-slate-200">
+        <h3 class="font-bold text-xl text-slate-900 mb-4 flex items-center space-x-2">
+          <i data-lucide="wrench" class="text-brandBlue"></i>
+          <span>ECOMAPP-FR Requirements</span>
+        </h3>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>Delivered for Android devices</span></li>
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>Working Rear Camera (QR Triage scanning)</span></li>
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>GPS & Cellular Data Access</span></li>
+          <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i><span>Integration with SPARROW Backend</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-white font-bold mb-1">Catalink Limited</p>
+        <p>Nicosia, Cyprus | info@catalink.eu</p>
+        <p class="mt-4 text-xs text-slate-500">
+          © 2026 Catalink Limited. SPARROW has received funding from the European Union's Horizon Europe research and innovation programme under grant agreement 101168499.
+        </p>
+      </div>
+      <div class="md:text-right">
+        <a href="https://catalink.eu" target="_blank" class="text-blue-400 hover:underline">catalink.eu</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Initialization -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
